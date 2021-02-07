@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['equals_105',['Equals',['../class_database_library_1_1_contact.html#aa616c049facf85bd1c844016d0c99856',1,'DatabaseLibrary.Contact.Equals(Contact other)'],['../class_database_library_1_1_contact.html#a49355a61c954b88f0df54c234a136108',1,'DatabaseLibrary.Contact.Equals(Contact contactA, Contact contactB)'],['../class_database_library_1_1_models_1_1_person.html#afbbad7f734bca90733e453ebd1683345',1,'DatabaseLibrary.Models.Person.Equals(Person other)'],['../class_database_library_1_1_models_1_1_person.html#ab837fafa53c84eee292f7e4a3231008c',1,'DatabaseLibrary.Models.Person.Equals(Person personA, Person personB)'],['../class_database_library_1_1_person.html#a2011a3c5e12864cc4c43c9c07cf272ea',1,'DatabaseLibrary.Person.Equals(Person other)'],['../class_database_library_1_1_person.html#a2881d2cd17ddb75cfcb0de017eb6beeb',1,'DatabaseLibrary.Person.Equals(object obj)']]]
+];

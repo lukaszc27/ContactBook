@@ -1,0 +1,104 @@
+\hypertarget{class_contact_book_1_1_view_models_1_1_base_view_model}{}\doxysection{Contact\+Book.\+View\+Models.\+Base\+View\+Model Class Reference}
+\label{class_contact_book_1_1_view_models_1_1_base_view_model}\index{ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}}
+
+
+Model danych dla okna głównego aplikacji (projektowanie w modelu MVVM)  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_contact_book_1_1_view_models_1_1_base_view_model_a74d2bc5ccf39adf2fc55e397747c5787}\label{class_contact_book_1_1_view_models_1_1_base_view_model_a74d2bc5ccf39adf2fc55e397747c5787}} 
+{\bfseries Base\+View\+Model} (\mbox{\hyperlink{class_contact_book_1_1_main_window}{Main\+Window}} window)
+\item 
+void \mbox{\hyperlink{class_contact_book_1_1_view_models_1_1_base_view_model_a651f0ba687b01fff9ce763fbdb02957d}{Add\+Contact\+\_\+\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Reakcja na komendę Base\+Command nawiązuje połączenie z bazą danych oraz wyświetla dialog dodawania nowej osoby \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_contact_book_1_1_view_models_1_1_base_view_model_aa10f5fde7672b3f8e87bbcb76d5412c3}{Remove\+Button\+\_\+\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Reakcja na kliknięcie przycisku Usuń w oknie głównym \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_contact_book_1_1_view_models_1_1_base_view_model_a32f975fb4d772b83626e03b1e682dbbf}{About\+Application\+\_\+\+Clicked}} ()
+\begin{DoxyCompactList}\small\item\em Reakcja na About\+Command wyświetla okno informacyjne o programie \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+ICommand \mbox{\hyperlink{class_contact_book_1_1_view_models_1_1_base_view_model_a3fc0d58b09592f7b432df66825a61e22}{Base\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Komenda dodawania nowej osoby do listy \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_contact_book_1_1_view_models_1_1_base_view_model_ad7c59a89ca2c1bddcdd92f8415051e9d}{About\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Komenda wyświetlająca okno informacyjne o programie \end{DoxyCompactList}\item 
+ICommand \mbox{\hyperlink{class_contact_book_1_1_view_models_1_1_base_view_model_a62bd0c6a9489e5105c1d8150309bdda4}{Remove\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Komenda usuwania zaznaczonej osoby z listy i bazy danych SQLite \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Model danych dla okna głównego aplikacji (projektowanie w modelu MVVM) 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_contact_book_1_1_view_models_1_1_base_view_model_a32f975fb4d772b83626e03b1e682dbbf}\label{class_contact_book_1_1_view_models_1_1_base_view_model_a32f975fb4d772b83626e03b1e682dbbf}} 
+\index{ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}!AboutApplication\_Clicked@{AboutApplication\_Clicked}}
+\index{AboutApplication\_Clicked@{AboutApplication\_Clicked}!ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}}
+\doxysubsubsection{\texorpdfstring{AboutApplication\_Clicked()}{AboutApplication\_Clicked()}}
+{\footnotesize\ttfamily void Contact\+Book.\+View\+Models.\+Base\+View\+Model.\+About\+Application\+\_\+\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reakcja na About\+Command wyświetla okno informacyjne o programie 
+
+\mbox{\Hypertarget{class_contact_book_1_1_view_models_1_1_base_view_model_a651f0ba687b01fff9ce763fbdb02957d}\label{class_contact_book_1_1_view_models_1_1_base_view_model_a651f0ba687b01fff9ce763fbdb02957d}} 
+\index{ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}!AddContact\_Clicked@{AddContact\_Clicked}}
+\index{AddContact\_Clicked@{AddContact\_Clicked}!ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}}
+\doxysubsubsection{\texorpdfstring{AddContact\_Clicked()}{AddContact\_Clicked()}}
+{\footnotesize\ttfamily void Contact\+Book.\+View\+Models.\+Base\+View\+Model.\+Add\+Contact\+\_\+\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reakcja na komendę Base\+Command nawiązuje połączenie z bazą danych oraz wyświetla dialog dodawania nowej osoby 
+
+\mbox{\Hypertarget{class_contact_book_1_1_view_models_1_1_base_view_model_aa10f5fde7672b3f8e87bbcb76d5412c3}\label{class_contact_book_1_1_view_models_1_1_base_view_model_aa10f5fde7672b3f8e87bbcb76d5412c3}} 
+\index{ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}!RemoveButton\_Clicked@{RemoveButton\_Clicked}}
+\index{RemoveButton\_Clicked@{RemoveButton\_Clicked}!ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}}
+\doxysubsubsection{\texorpdfstring{RemoveButton\_Clicked()}{RemoveButton\_Clicked()}}
+{\footnotesize\ttfamily void Contact\+Book.\+View\+Models.\+Base\+View\+Model.\+Remove\+Button\+\_\+\+Clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reakcja na kliknięcie przycisku Usuń w oknie głównym 
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_contact_book_1_1_view_models_1_1_base_view_model_ad7c59a89ca2c1bddcdd92f8415051e9d}\label{class_contact_book_1_1_view_models_1_1_base_view_model_ad7c59a89ca2c1bddcdd92f8415051e9d}} 
+\index{ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}!AboutCommand@{AboutCommand}}
+\index{AboutCommand@{AboutCommand}!ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}}
+\doxysubsubsection{\texorpdfstring{AboutCommand}{AboutCommand}}
+{\footnotesize\ttfamily ICommand Contact\+Book.\+View\+Models.\+Base\+View\+Model.\+About\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Komenda wyświetlająca okno informacyjne o programie 
+
+\mbox{\Hypertarget{class_contact_book_1_1_view_models_1_1_base_view_model_a3fc0d58b09592f7b432df66825a61e22}\label{class_contact_book_1_1_view_models_1_1_base_view_model_a3fc0d58b09592f7b432df66825a61e22}} 
+\index{ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}!BaseCommand@{BaseCommand}}
+\index{BaseCommand@{BaseCommand}!ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}}
+\doxysubsubsection{\texorpdfstring{BaseCommand}{BaseCommand}}
+{\footnotesize\ttfamily ICommand Contact\+Book.\+View\+Models.\+Base\+View\+Model.\+Base\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Komenda dodawania nowej osoby do listy 
+
+\mbox{\Hypertarget{class_contact_book_1_1_view_models_1_1_base_view_model_a62bd0c6a9489e5105c1d8150309bdda4}\label{class_contact_book_1_1_view_models_1_1_base_view_model_a62bd0c6a9489e5105c1d8150309bdda4}} 
+\index{ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}!RemoveCommand@{RemoveCommand}}
+\index{RemoveCommand@{RemoveCommand}!ContactBook.ViewModels.BaseViewModel@{ContactBook.ViewModels.BaseViewModel}}
+\doxysubsubsection{\texorpdfstring{RemoveCommand}{RemoveCommand}}
+{\footnotesize\ttfamily ICommand Contact\+Book.\+View\+Models.\+Base\+View\+Model.\+Remove\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Komenda usuwania zaznaczonej osoby z listy i bazy danych SQLite 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Contact\+Book/\+View\+Models/Base\+View\+Model.\+cs\end{DoxyCompactItemize}

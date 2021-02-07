@@ -1,0 +1,190 @@
+\hypertarget{class_database_library_1_1_models_1_1_person}{}\doxysection{Database\+Library.\+Models.\+Person Class Reference}
+\label{class_database_library_1_1_models_1_1_person}\index{DatabaseLibrary.Models.Person@{DatabaseLibrary.Models.Person}}
+
+
+reprezentacja modelu danych przygotowanych do modelu Grid\+View klasa również jest przygotowana do serializacji do XML klasa jest zapieczętowana aby z niej nie dzeidziczyć ponieważ stanowi pomost pomiędzy tabelą \mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} a Contacts oraz jest modelem danych pobranych z bazy  
+
+
+Inheritance diagram for Database\+Library.\+Models.\+Person\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_database_library_1_1_models_1_1_person}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a07c73bbfee4f9d1d70a6fe70e55fd67c}\label{class_database_library_1_1_models_1_1_person_a07c73bbfee4f9d1d70a6fe70e55fd67c}} 
+{\bfseries Person} (String first\+Name, String last\+Name, int age, String city, String street, String home\+Number, String post\+Code, String post\+Office, String email, String phone, int id=0)
+\item 
+bool \mbox{\hyperlink{class_database_library_1_1_models_1_1_person_afbbad7f734bca90733e453ebd1683345}{Equals}} (\mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} other)
+\begin{DoxyCompactList}\small\item\em Porównuje obiekty ze sobą \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a43ecf4890e6db0198a9aca22449d101b}\label{class_database_library_1_1_models_1_1_person_a43ecf4890e6db0198a9aca22449d101b}} 
+override bool {\bfseries Equals} (object obj)
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_ac8e514cf16a13468f929201e21d552ea}\label{class_database_library_1_1_models_1_1_person_ac8e514cf16a13468f929201e21d552ea}} 
+override int {\bfseries Get\+Hash\+Code} ()
+\item 
+int \mbox{\hyperlink{class_database_library_1_1_models_1_1_person_a9b67db40e073f4b21943ad069445f651}{Compare\+To}} (object obj)
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiająca prawidłowy pożądek obiektów klasy \mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a56df106b819f0ecfd600200a07e46af1}\label{class_database_library_1_1_models_1_1_person_a56df106b819f0ecfd600200a07e46af1}} 
+override string {\bfseries To\+String} ()
+\item 
+string \mbox{\hyperlink{class_database_library_1_1_models_1_1_person_ace6d12ea1e1add8d5ed15512b650f22c}{To\+String}} (char separator)
+\begin{DoxyCompactList}\small\item\em Zapisuje dane użytkownika w postaci ciągu (użyteczne podczas eksportu do CSV) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_database_library_1_1_models_1_1_person_ab837fafa53c84eee292f7e4a3231008c}{Equals}} (\mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} personA, \mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} personB)
+\begin{DoxyCompactList}\small\item\em funkcja statyczna opruwnująca dwa obiekty ze sobą \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a405e66b59a50ba1de4827274a77455f7}\label{class_database_library_1_1_models_1_1_person_a405e66b59a50ba1de4827274a77455f7}} 
+static bool {\bfseries operator==} (\mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} personA, \mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} personB)
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a8716497ea8888de677ac684c65f184a9}\label{class_database_library_1_1_models_1_1_person_a8716497ea8888de677ac684c65f184a9}} 
+static bool {\bfseries operator!=} (\mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} personA, \mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} personB)
+\item 
+static \mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} \mbox{\hyperlink{class_database_library_1_1_models_1_1_person_a5c230d823daf4f9c23584737d4f0009b}{Parse}} (string pattern, char separator=\textquotesingle{};\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em parsusje tekst przekazany jako argument dzieląc go na częsci i wyciągając dane z których następnie tworzy obiekt \mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a406dffd3d86812fcbe7b0a7c189b8bb5}\label{class_database_library_1_1_models_1_1_person_a406dffd3d86812fcbe7b0a7c189b8bb5}} 
+int {\bfseries ID}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a50df953f5817463984562ac404a49a6c}\label{class_database_library_1_1_models_1_1_person_a50df953f5817463984562ac404a49a6c}} 
+String {\bfseries First\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_ab5214e7203da54241ad6cf33f98fbf2e}\label{class_database_library_1_1_models_1_1_person_ab5214e7203da54241ad6cf33f98fbf2e}} 
+String {\bfseries Last\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a359d0c44c2a99c3ddd58c588e08d03e1}\label{class_database_library_1_1_models_1_1_person_a359d0c44c2a99c3ddd58c588e08d03e1}} 
+int {\bfseries Age}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a8758bb964a74b889c03b5eb8e8c8428f}\label{class_database_library_1_1_models_1_1_person_a8758bb964a74b889c03b5eb8e8c8428f}} 
+String {\bfseries City}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_adc1735b9cfd6bc712a0def61f1d25318}\label{class_database_library_1_1_models_1_1_person_adc1735b9cfd6bc712a0def61f1d25318}} 
+String {\bfseries Street}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a736ccfa29cccf697144ce5faf1be77d2}\label{class_database_library_1_1_models_1_1_person_a736ccfa29cccf697144ce5faf1be77d2}} 
+String {\bfseries Home\+Number}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a094e6eb57637a344d49edc8bade6a1df}\label{class_database_library_1_1_models_1_1_person_a094e6eb57637a344d49edc8bade6a1df}} 
+String {\bfseries Post\+Office}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_aeb4f457df3831fb1dd74d4c076c97ab5}\label{class_database_library_1_1_models_1_1_person_aeb4f457df3831fb1dd74d4c076c97ab5}} 
+String {\bfseries Post\+Code}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a6242b99a89ca08281a4bab5bbd88117b}\label{class_database_library_1_1_models_1_1_person_a6242b99a89ca08281a4bab5bbd88117b}} 
+String {\bfseries Email}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_aeb84ce33a2656a3e75a89248e01804c7}\label{class_database_library_1_1_models_1_1_person_aeb84ce33a2656a3e75a89248e01804c7}} 
+String {\bfseries Phone}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+reprezentacja modelu danych przygotowanych do modelu Grid\+View klasa również jest przygotowana do serializacji do XML klasa jest zapieczętowana aby z niej nie dzeidziczyć ponieważ stanowi pomost pomiędzy tabelą \mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} a Contacts oraz jest modelem danych pobranych z bazy 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a9b67db40e073f4b21943ad069445f651}\label{class_database_library_1_1_models_1_1_person_a9b67db40e073f4b21943ad069445f651}} 
+\index{DatabaseLibrary.Models.Person@{DatabaseLibrary.Models.Person}!CompareTo@{CompareTo}}
+\index{CompareTo@{CompareTo}!DatabaseLibrary.Models.Person@{DatabaseLibrary.Models.Person}}
+\doxysubsubsection{\texorpdfstring{CompareTo()}{CompareTo()}}
+{\footnotesize\ttfamily int Database\+Library.\+Models.\+Person.\+Compare\+To (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Funkcja ustawiająca prawidłowy pożądek obiektów klasy \mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & objekt z którym poruwnuje aktualny obiekt (this)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_afbbad7f734bca90733e453ebd1683345}\label{class_database_library_1_1_models_1_1_person_afbbad7f734bca90733e453ebd1683345}} 
+\index{DatabaseLibrary.Models.Person@{DatabaseLibrary.Models.Person}!Equals@{Equals}}
+\index{Equals@{Equals}!DatabaseLibrary.Models.Person@{DatabaseLibrary.Models.Person}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Database\+Library.\+Models.\+Person.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}}}]{other }\end{DoxyParamCaption})}
+
+
+
+Porównuje obiekty ze sobą 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & obiekt do porównania z aktualnym obiektem (this)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jeśli obiekty są identyczne, w przeciwnym wypadku false
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_ab837fafa53c84eee292f7e4a3231008c}\label{class_database_library_1_1_models_1_1_person_ab837fafa53c84eee292f7e4a3231008c}} 
+\index{DatabaseLibrary.Models.Person@{DatabaseLibrary.Models.Person}!Equals@{Equals}}
+\index{Equals@{Equals}!DatabaseLibrary.Models.Person@{DatabaseLibrary.Models.Person}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static bool Database\+Library.\+Models.\+Person.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}}}]{personA,  }\item[{\mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}}}]{personB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+funkcja statyczna opruwnująca dwa obiekty ze sobą 
+
+
+\begin{DoxyParams}{Parameters}
+{\em personA} & obiekt do porównania\\
+\hline
+{\em personB} & obiekt do porównania\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jeśli obiekty są takie same, w przeciwnym wypadku false
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_a5c230d823daf4f9c23584737d4f0009b}\label{class_database_library_1_1_models_1_1_person_a5c230d823daf4f9c23584737d4f0009b}} 
+\index{DatabaseLibrary.Models.Person@{DatabaseLibrary.Models.Person}!Parse@{Parse}}
+\index{Parse@{Parse}!DatabaseLibrary.Models.Person@{DatabaseLibrary.Models.Person}}
+\doxysubsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} Database\+Library.\+Models.\+Person.\+Parse (\begin{DoxyParamCaption}\item[{string}]{pattern,  }\item[{char}]{separator = {\ttfamily \textquotesingle{};\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+parsusje tekst przekazany jako argument dzieląc go na częsci i wyciągając dane z których następnie tworzy obiekt \mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & tekst przeznaczony parsowaniu\\
+\hline
+{\em separator} & znak według którego pattern jest dzielony na kolumny\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+obiekt \mbox{\hyperlink{class_database_library_1_1_models_1_1_person}{Person}} utworzony z danych występujących w tekscie pattern
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_library_1_1_models_1_1_person_ace6d12ea1e1add8d5ed15512b650f22c}\label{class_database_library_1_1_models_1_1_person_ace6d12ea1e1add8d5ed15512b650f22c}} 
+\index{DatabaseLibrary.Models.Person@{DatabaseLibrary.Models.Person}!ToString@{ToString}}
+\index{ToString@{ToString}!DatabaseLibrary.Models.Person@{DatabaseLibrary.Models.Person}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily string Database\+Library.\+Models.\+Person.\+To\+String (\begin{DoxyParamCaption}\item[{char}]{separator }\end{DoxyParamCaption})}
+
+
+
+Zapisuje dane użytkownika w postaci ciągu (użyteczne podczas eksportu do CSV) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em separator} & znak który rozdziela poszczególne sekcje\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ciąg znaków gotowy do zapisu w pliku CSV (string)
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Database\+Library/\+Models/Person.\+cs\end{DoxyCompactItemize}

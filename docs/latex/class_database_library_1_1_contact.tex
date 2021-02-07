@@ -1,0 +1,189 @@
+\hypertarget{class_database_library_1_1_contact}{}\doxysection{Database\+Library.\+Contact Class Reference}
+\label{class_database_library_1_1_contact}\index{DatabaseLibrary.Contact@{DatabaseLibrary.Contact}}
+
+
+Reprezentacja danych kontaktowych w bazie danych  
+
+
+Inheritance diagram for Database\+Library.\+Contact\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_database_library_1_1_contact}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_database_library_1_1_contact_aa616c049facf85bd1c844016d0c99856}{Equals}} (\mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} other)
+\begin{DoxyCompactList}\small\item\em Poruwnuje bieżący obiekt (this) do obiektu other \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_database_library_1_1_contact_a40628f936f43d492c1616d6fd99632b9}\label{class_database_library_1_1_contact_a40628f936f43d492c1616d6fd99632b9}} 
+override bool {\bfseries Equals} (object obj)
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_contact_ae807e1e43d63630ba10db21e892c9338}\label{class_database_library_1_1_contact_ae807e1e43d63630ba10db21e892c9338}} 
+override int {\bfseries Get\+Hash\+Code} ()
+\item 
+int \mbox{\hyperlink{class_database_library_1_1_contact_a94a86b84883233faaa2b198b34893f0e}{Compare\+To}} (object obj)
+\begin{DoxyCompactList}\small\item\em Implementacja interfejsu IComparable w celu prawidłowego poążdkowania elemetów w listach sortowania \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_database_library_1_1_contact_a49355a61c954b88f0df54c234a136108}{Equals}} (\mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} contactA, \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} contactB)
+\begin{DoxyCompactList}\small\item\em metoda statyczna służąca do porównynwania dwuch instancji klasy \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_database_library_1_1_contact_a8b02ede6443b8c28793ea37ad7a9c5b3}{operator==}} (\mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} contactA, \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} contactB)
+\begin{DoxyCompactList}\small\item\em przeciążanie operatora równości w celu łatwiejszego i intuicyjnego sprawdzania czy obiekty są sobie równe \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_database_library_1_1_contact_a5f3e6ea27c11037e4ecd59303790fa13}{operator!=}} (\mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} contactA, \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} contactB)
+\begin{DoxyCompactList}\small\item\em przeciążanie operatora różności w celu łatwego oraz intuicyjnego sprawdzania czy obiekty są różne \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_contact_a81c2f18d76da90cac94804b21b18dd56}\label{class_database_library_1_1_contact_a81c2f18d76da90cac94804b21b18dd56}} 
+int {\bfseries ID}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_contact_adef87f7f8340db3e2f49a0e9da342596}\label{class_database_library_1_1_contact_adef87f7f8340db3e2f49a0e9da342596}} 
+String {\bfseries City}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_contact_ad42ae8dba0206957828ec1254bd03aef}\label{class_database_library_1_1_contact_ad42ae8dba0206957828ec1254bd03aef}} 
+String {\bfseries Street}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_contact_a7a3f6ec0304902a66bb2d068e6cbbabb}\label{class_database_library_1_1_contact_a7a3f6ec0304902a66bb2d068e6cbbabb}} 
+String {\bfseries Post\+Code}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_contact_abd402120d1e827efe9a94199fef44b7c}\label{class_database_library_1_1_contact_abd402120d1e827efe9a94199fef44b7c}} 
+String {\bfseries Post\+Office}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_contact_a7ce1ad0527faefd7e502720a3d8963c7}\label{class_database_library_1_1_contact_a7ce1ad0527faefd7e502720a3d8963c7}} 
+String {\bfseries Home\+Number}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_contact_a5d9009c3e9d6ce277f994de56c37f8fc}\label{class_database_library_1_1_contact_a5d9009c3e9d6ce277f994de56c37f8fc}} 
+String {\bfseries Email}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_contact_a81ec6252a3a5279d625dab3639f07b16}\label{class_database_library_1_1_contact_a81ec6252a3a5279d625dab3639f07b16}} 
+String {\bfseries Phone}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_database_library_1_1_contact_a5c45999543f9ef07f86eea4bbc626c89}{Person\+ID}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Powiązanie tabel \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} oraz \mbox{\hyperlink{class_database_library_1_1_person}{Person}} relacją jeden do jeden \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_database_library_1_1_contact_aa90a8c0fde0dc60e3832239fd3f092cd}\label{class_database_library_1_1_contact_aa90a8c0fde0dc60e3832239fd3f092cd}} 
+\mbox{\hyperlink{class_database_library_1_1_person}{Person}} {\bfseries Person}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reprezentacja danych kontaktowych w bazie danych 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_database_library_1_1_contact_a94a86b84883233faaa2b198b34893f0e}\label{class_database_library_1_1_contact_a94a86b84883233faaa2b198b34893f0e}} 
+\index{DatabaseLibrary.Contact@{DatabaseLibrary.Contact}!CompareTo@{CompareTo}}
+\index{CompareTo@{CompareTo}!DatabaseLibrary.Contact@{DatabaseLibrary.Contact}}
+\doxysubsubsection{\texorpdfstring{CompareTo()}{CompareTo()}}
+{\footnotesize\ttfamily int Database\+Library.\+Contact.\+Compare\+To (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Implementacja interfejsu IComparable w celu prawidłowego poążdkowania elemetów w listach sortowania 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & obiekt z którym porównuje aktulany obiekt (this)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[} $<$ 0\mbox{]} -\/ bieżące wystąpienie poprzedza obiekt \mbox{[} 0\mbox{]} -\/ bieżące wystąpienie występuje w tym samym pożądku sortowania \mbox{[} $>$ 0\mbox{]} -\/ bieżące wystąpienie występuje po obiekcie określonym przez Compare\+To 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_library_1_1_contact_a49355a61c954b88f0df54c234a136108}\label{class_database_library_1_1_contact_a49355a61c954b88f0df54c234a136108}} 
+\index{DatabaseLibrary.Contact@{DatabaseLibrary.Contact}!Equals@{Equals}}
+\index{Equals@{Equals}!DatabaseLibrary.Contact@{DatabaseLibrary.Contact}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static bool Database\+Library.\+Contact.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_database_library_1_1_contact}{Contact}}}]{contactA,  }\item[{\mbox{\hyperlink{class_database_library_1_1_contact}{Contact}}}]{contactB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+metoda statyczna służąca do porównynwania dwuch instancji klasy \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contactA} & obiekt klasy \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} do porównania\\
+\hline
+{\em contactB} & obiekt klasy \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} do porównania\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jeśli obiekty są sobie równe, w przeciwnym wypadku false
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_library_1_1_contact_aa616c049facf85bd1c844016d0c99856}\label{class_database_library_1_1_contact_aa616c049facf85bd1c844016d0c99856}} 
+\index{DatabaseLibrary.Contact@{DatabaseLibrary.Contact}!Equals@{Equals}}
+\index{Equals@{Equals}!DatabaseLibrary.Contact@{DatabaseLibrary.Contact}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Database\+Library.\+Contact.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_database_library_1_1_contact}{Contact}}}]{other }\end{DoxyParamCaption})}
+
+
+
+Poruwnuje bieżący obiekt (this) do obiektu other 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & obiekt do sprawdzenia\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jeśli oba obiekty są sobie równe, w przeciwnym wypadku false
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_library_1_1_contact_a5f3e6ea27c11037e4ecd59303790fa13}\label{class_database_library_1_1_contact_a5f3e6ea27c11037e4ecd59303790fa13}} 
+\index{DatabaseLibrary.Contact@{DatabaseLibrary.Contact}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!DatabaseLibrary.Contact@{DatabaseLibrary.Contact}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily static bool Database\+Library.\+Contact.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_database_library_1_1_contact}{Contact}}}]{contactA,  }\item[{\mbox{\hyperlink{class_database_library_1_1_contact}{Contact}}}]{contactB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+przeciążanie operatora różności w celu łatwego oraz intuicyjnego sprawdzania czy obiekty są różne 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contactA} & obiekt \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} do sprawdzenia\\
+\hline
+{\em contactB} & obiekt \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} do sprawdzenia\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jeśli obiekty są różne, w przeciwnym wypadku false
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_library_1_1_contact_a8b02ede6443b8c28793ea37ad7a9c5b3}\label{class_database_library_1_1_contact_a8b02ede6443b8c28793ea37ad7a9c5b3}} 
+\index{DatabaseLibrary.Contact@{DatabaseLibrary.Contact}!operator==@{operator==}}
+\index{operator==@{operator==}!DatabaseLibrary.Contact@{DatabaseLibrary.Contact}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool Database\+Library.\+Contact.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_database_library_1_1_contact}{Contact}}}]{contactA,  }\item[{\mbox{\hyperlink{class_database_library_1_1_contact}{Contact}}}]{contactB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+przeciążanie operatora równości w celu łatwiejszego i intuicyjnego sprawdzania czy obiekty są sobie równe 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contactA} & obiekt \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} do porównania\\
+\hline
+{\em contactB} & obiekt \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} do porównania\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jeśli obiekty są identyczne, w przeciwnym wypadku false
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_database_library_1_1_contact_a5c45999543f9ef07f86eea4bbc626c89}\label{class_database_library_1_1_contact_a5c45999543f9ef07f86eea4bbc626c89}} 
+\index{DatabaseLibrary.Contact@{DatabaseLibrary.Contact}!PersonID@{PersonID}}
+\index{PersonID@{PersonID}!DatabaseLibrary.Contact@{DatabaseLibrary.Contact}}
+\doxysubsubsection{\texorpdfstring{PersonID}{PersonID}}
+{\footnotesize\ttfamily int Database\+Library.\+Contact.\+Person\+ID\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Powiązanie tabel \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} oraz \mbox{\hyperlink{class_database_library_1_1_person}{Person}} relacją jeden do jeden 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Database\+Library/Contact.\+cs\end{DoxyCompactItemize}

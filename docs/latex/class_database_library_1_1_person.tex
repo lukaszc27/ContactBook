@@ -1,0 +1,172 @@
+\hypertarget{class_database_library_1_1_person}{}\doxysection{Database\+Library.\+Person Class Reference}
+\label{class_database_library_1_1_person}\index{DatabaseLibrary.Person@{DatabaseLibrary.Person}}
+
+
+Reprezentacja osób z listy kontaktów w bazie danych  
+
+
+Inheritance diagram for Database\+Library.\+Person\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_database_library_1_1_person}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_database_library_1_1_person_a2011a3c5e12864cc4c43c9c07cf272ea}{Equals}} (\mbox{\hyperlink{class_database_library_1_1_person}{Person}} other)
+\begin{DoxyCompactList}\small\item\em Porównuje obiekty ze sobą \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_database_library_1_1_person_a2881d2cd17ddb75cfcb0de017eb6beeb}{Equals}} (object obj)
+\begin{DoxyCompactList}\small\item\em Porównywanie na podstawie obiektów metoda pracuje dla wszystkich typów C\# dziedziczących po object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_database_library_1_1_person_a58abddcef519fdf3b42d5577ece051e0}\label{class_database_library_1_1_person_a58abddcef519fdf3b42d5577ece051e0}} 
+override int {\bfseries Get\+Hash\+Code} ()
+\item 
+int \mbox{\hyperlink{class_database_library_1_1_person_a1657b9de6a538401daabdbeb193df3b8}{Compare\+To}} (object obj)
+\begin{DoxyCompactList}\small\item\em implementacja interfejsu IComparable w celu organizacji prawodłowego pożądku (Obiekty klasy \mbox{\hyperlink{class_database_library_1_1_person}{Person}} są sortowane alfabetycznie rozpoczynająć od nazwiska następnie imię i na końcu wiek) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_person_a416ec16715399c6377adaf562721f1a9}\label{class_database_library_1_1_person_a416ec16715399c6377adaf562721f1a9}} 
+static bool {\bfseries Equals} (\mbox{\hyperlink{class_database_library_1_1_person}{Person}} personA, \mbox{\hyperlink{class_database_library_1_1_person}{Person}} personB)
+\item 
+static bool \mbox{\hyperlink{class_database_library_1_1_person_a3b2893bda2042fac3f8ac2db8ac08cab}{operator==}} (\mbox{\hyperlink{class_database_library_1_1_person}{Person}} personA, \mbox{\hyperlink{class_database_library_1_1_person}{Person}} personB)
+\begin{DoxyCompactList}\small\item\em Przeciążanie operatora równości ma to na celu proste i intiucyjne sprawdzanie równości dwóch obiektów \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_database_library_1_1_person_af39b3bdb377e06aeaeb458a3cd1861ea}{operator!=}} (\mbox{\hyperlink{class_database_library_1_1_person}{Person}} personA, \mbox{\hyperlink{class_database_library_1_1_person}{Person}} personB)
+\begin{DoxyCompactList}\small\item\em przeciążanie operatora różności jest przeciwieństwem do operatora równości \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_person_a98d7b38233155f0c230acee9318dae77}\label{class_database_library_1_1_person_a98d7b38233155f0c230acee9318dae77}} 
+int {\bfseries ID}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_person_acb9a17aa0e50fce16d158d538d69cb02}\label{class_database_library_1_1_person_acb9a17aa0e50fce16d158d538d69cb02}} 
+String {\bfseries First\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_person_ac5b545ada811fd581450dbad5f4480dd}\label{class_database_library_1_1_person_ac5b545ada811fd581450dbad5f4480dd}} 
+String {\bfseries Last\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_database_library_1_1_person_a81d8519ec730beaef23102a5915d5adb}\label{class_database_library_1_1_person_a81d8519ec730beaef23102a5915d5adb}} 
+int {\bfseries Age}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} \mbox{\hyperlink{class_database_library_1_1_person_aa73421ed357c1e4709bf345a3e85c6ce}{Contact}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Powiązanie tabel \mbox{\hyperlink{class_database_library_1_1_person}{Person}} oraz \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} relacją jeden do jeden (EF) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reprezentacja osób z listy kontaktów w bazie danych 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_database_library_1_1_person_a1657b9de6a538401daabdbeb193df3b8}\label{class_database_library_1_1_person_a1657b9de6a538401daabdbeb193df3b8}} 
+\index{DatabaseLibrary.Person@{DatabaseLibrary.Person}!CompareTo@{CompareTo}}
+\index{CompareTo@{CompareTo}!DatabaseLibrary.Person@{DatabaseLibrary.Person}}
+\doxysubsubsection{\texorpdfstring{CompareTo()}{CompareTo()}}
+{\footnotesize\ttfamily int Database\+Library.\+Person.\+Compare\+To (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+implementacja interfejsu IComparable w celu organizacji prawodłowego pożądku (Obiekty klasy \mbox{\hyperlink{class_database_library_1_1_person}{Person}} są sortowane alfabetycznie rozpoczynająć od nazwiska następnie imię i na końcu wiek) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & obiekt z którym porównuje aktualny obiekt (this)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{[} $<$ 0\mbox{]} -\/ bieżące wystąpienie poprzedza obiekt \mbox{[} 0\mbox{]} -\/ bieżące wystąpienie występuje w tym samym pożądku sortowania \mbox{[} $>$ 0\mbox{]} -\/ bieżące wystąpienie występuje po obiekcie określonym przez Compare\+To 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_library_1_1_person_a2881d2cd17ddb75cfcb0de017eb6beeb}\label{class_database_library_1_1_person_a2881d2cd17ddb75cfcb0de017eb6beeb}} 
+\index{DatabaseLibrary.Person@{DatabaseLibrary.Person}!Equals@{Equals}}
+\index{Equals@{Equals}!DatabaseLibrary.Person@{DatabaseLibrary.Person}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override bool Database\+Library.\+Person.\+Equals (\begin{DoxyParamCaption}\item[{object}]{obj }\end{DoxyParamCaption})}
+
+
+
+Porównywanie na podstawie obiektów metoda pracuje dla wszystkich typów C\# dziedziczących po object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & obiekt do sprawdzenia\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jeśli obj jest obiektem \mbox{\hyperlink{class_database_library_1_1_person}{Person}} oraz jeśli obiekt obj oraz this są identyczne
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_library_1_1_person_a2011a3c5e12864cc4c43c9c07cf272ea}\label{class_database_library_1_1_person_a2011a3c5e12864cc4c43c9c07cf272ea}} 
+\index{DatabaseLibrary.Person@{DatabaseLibrary.Person}!Equals@{Equals}}
+\index{Equals@{Equals}!DatabaseLibrary.Person@{DatabaseLibrary.Person}}
+\doxysubsubsection{\texorpdfstring{Equals()}{Equals()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Database\+Library.\+Person.\+Equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_database_library_1_1_person}{Person}}}]{other }\end{DoxyParamCaption})}
+
+
+
+Porównuje obiekty ze sobą 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & obiekt do porównania z obiektem this (aktualnym)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ jeśli obiekty są identyczne, w przeciwnym wypadku false
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_library_1_1_person_af39b3bdb377e06aeaeb458a3cd1861ea}\label{class_database_library_1_1_person_af39b3bdb377e06aeaeb458a3cd1861ea}} 
+\index{DatabaseLibrary.Person@{DatabaseLibrary.Person}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!DatabaseLibrary.Person@{DatabaseLibrary.Person}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily static bool Database\+Library.\+Person.\+operator!= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_database_library_1_1_person}{Person}}}]{personA,  }\item[{\mbox{\hyperlink{class_database_library_1_1_person}{Person}}}]{personB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+przeciążanie operatora różności jest przeciwieństwem do operatora równości 
+
+
+\begin{DoxyParams}{Parameters}
+{\em personA} & \\
+\hline
+{\em personB} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jeśli oba obiekty są różne, w przeciwnym wypadku false
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_database_library_1_1_person_a3b2893bda2042fac3f8ac2db8ac08cab}\label{class_database_library_1_1_person_a3b2893bda2042fac3f8ac2db8ac08cab}} 
+\index{DatabaseLibrary.Person@{DatabaseLibrary.Person}!operator==@{operator==}}
+\index{operator==@{operator==}!DatabaseLibrary.Person@{DatabaseLibrary.Person}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily static bool Database\+Library.\+Person.\+operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_database_library_1_1_person}{Person}}}]{personA,  }\item[{\mbox{\hyperlink{class_database_library_1_1_person}{Person}}}]{personB }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Przeciążanie operatora równości ma to na celu proste i intiucyjne sprawdzanie równości dwóch obiektów 
+
+
+\begin{DoxyParams}{Parameters}
+{\em personA} & \\
+\hline
+{\em personB} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jeśli oba obiekty są identyczne, w przeciwnym wpadku false
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_database_library_1_1_person_aa73421ed357c1e4709bf345a3e85c6ce}\label{class_database_library_1_1_person_aa73421ed357c1e4709bf345a3e85c6ce}} 
+\index{DatabaseLibrary.Person@{DatabaseLibrary.Person}!Contact@{Contact}}
+\index{Contact@{Contact}!DatabaseLibrary.Person@{DatabaseLibrary.Person}}
+\doxysubsubsection{\texorpdfstring{Contact}{Contact}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} Database\+Library.\+Person.\+Contact\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Powiązanie tabel \mbox{\hyperlink{class_database_library_1_1_person}{Person}} oraz \mbox{\hyperlink{class_database_library_1_1_contact}{Contact}} relacją jeden do jeden (EF) 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Database\+Library/Person.\+cs\end{DoxyCompactItemize}
